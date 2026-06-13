@@ -4,17 +4,24 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Digital Energy Audit</title>
+
 <link rel="stylesheet" href="index.css">
+
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
 </head>
+
 <body>
 
 <header>
   <div class="header-top">
     <div class="header-actions">
+
       <img src="LogoIreland.png" alt="Logo Company" style="height:50px;">
-      <h1 class="h1-3d-zoom">DIGITAL ENERGY AUDIT LIMITED</h1>
+
+      <h1 class="h1-3d-zoom">
+        DIGITAL ENERGY AUDIT LIMITED
+      </h1>
 
       <div class="lang-switcher">
         <select id="language-select">
@@ -24,18 +31,42 @@
       </div>
 
       <nav>
-        <button class="tab-link active" data-tab="services">🏠 Home</button>
-        <button class="tab-link" data-tab="about">About Us</button>
-        <button class="tab-link" data-tab="contact">Contact</button>
+        <button
+          class="tab-link active"
+          data-tab="services"
+          data-key="menuHome">
+          Home
+        </button>
+
+        <button
+          class="tab-link"
+          data-tab="about"
+          data-key="menuAbout">
+          About Us
+        </button>
+
+        <button
+          class="tab-link"
+          data-tab="contact"
+          data-key="menuContact">
+          Contact
+        </button>
       </nav>
+
     </div>
   </div>
 </header>
 
+<!-- HOME -->
+
 <section id="services" class="active encart">
-  <h2>Our Company</h2>
+
+  <h2 data-key="ourCompany">
+    🏢 Our Company
+  </h2>
 
   <div class="carousel">
+
     <button class="prev">&#10094;</button>
 
     <div class="carousel-track">
@@ -59,23 +90,90 @@
     </div>
 
     <button class="next">&#10095;</button>
+
   </div>
 
   <br>
 
-</section>
-
-<section id="about" class="encart">
-  <h2>Who We Are</h2>
-
-  <p>
-    Digital Energy Audit Limited helps households and businesses reduce
-    energy consumption through smart monitoring, data analysis,
-    IoT technologies, and digital transformation solutions.
+  <p data-key="widget">
+    We offer a web widget that allows you to visualize real-time consumption.
   </p>
 
-  <!-- Keep your existing Team Carousel here -->
 </section>
+
+<!-- ABOUT -->
+
+<section id="about" class="encart">
+
+  <h2 data-key="aboutTitle">
+    Who We Are
+  </h2>
+
+  <p data-key="aboutText">
+    We are a company specialized in measuring and optimizing electrical energy consumption.
+  </p>
+
+  <h3 data-key="teamTitle">
+    Our Team
+  </h3>
+
+  <div class="carousel">
+
+    <button class="prev">&#10094;</button>
+
+    <div class="carousel-track">
+
+      <div class="carousel-item">
+        <h4 data-key="titleJohn">
+          John, CEO & Data Analyst (Dublin and Madrid)
+        </h4>
+      </div>
+
+      <div class="carousel-item">
+        <h4 data-key="titleAdrien">
+          Adrien, AI Engineer & Energy Auditor (Geneva, Luxembourg and Madrid)
+        </h4>
+      </div>
+
+      <div class="carousel-item">
+        <h4 data-key="titleDona">
+          Dona, Marketing Director (Geneva)
+        </h4>
+      </div>
+
+      <div class="carousel-item">
+        <h4 data-key="titleDiana">
+          Diana, Marketing Assistant (Geneva)
+        </h4>
+      </div>
+
+      <div class="carousel-item">
+        <h4 data-key="titleNidia">
+          Nidia, Marketing Assistant (Madrid)
+        </h4>
+      </div>
+
+      <div class="carousel-item">
+        <h4 data-key="titlePaola">
+          Paola, Marketing Assistant (Madrid)
+        </h4>
+      </div>
+
+      <div class="carousel-item">
+        <h4 data-key="titleAmelia">
+          Amelia, Marketing Assistant (Madrid)
+        </h4>
+      </div>
+
+    </div>
+
+    <button class="next">&#10095;</button>
+
+  </div>
+
+</section>
+
+<!-- CONTACT -->
 
 <section id="contact" class="encart contact-section">
 
@@ -102,8 +200,35 @@
 
 </section>
 
+<!-- COOKIE BANNER (if used) -->
+
+<div id="cookie-banner" style="display:none;">
+
+  <span data-key="msgLegal">
+    This website uses necessary cookies and, with your consent, analytics cookies.
+  </span>
+
+  <button data-key="allOK">
+    Accept all
+  </button>
+
+  <button data-key="allNOK">
+    Reject all
+  </button>
+
+  <a href="#" data-key="moreInfo">
+    View details
+  </a>
+
+</div>
+
+<!-- FOOTER -->
+
 <footer>
-  &copy; 2025 DIGITAL ENERGY AUDIT LIMITED
+  © 2025 DIGITAL ENERGY AUDIT LIMITED —
+  <span data-key="rights">
+    All rights reserved.
+  </span>
 </footer>
 
 <script src="script.js"></script>
