@@ -19,6 +19,7 @@ gh auth login
 git branch -M main
 git push -u origin main
 
+# https://github.com/settings/tokens ( get the token key and set it as password )
 
 #####################
 ⚠️ Common issues
