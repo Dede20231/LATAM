@@ -3,8 +3,8 @@ git clone https://github.com/Dede20231/LATAM.git
 cd LATAM
 
 # every time
-mkdir DEST_REPO
-cd DEST_REPO
+mkdir DEST_REPO (create the Repository on Github)
+cd DEST_REPO 
 git init
 
 mv ../*.* .
