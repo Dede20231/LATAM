@@ -7,7 +7,7 @@ mkdir DEST_REPO
 cd DEST_REPO
 git init
 
-cp -r ../LATAM/* .
+mv ../*.* .
 git status
 git add .
 git commit -m "Initial commit - imported source LATAM"
